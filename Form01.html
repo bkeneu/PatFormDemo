@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title> Contact form Pat</title>
-        <h1>Automated From Reponse Email test for Pat</h1>
-        <p>This is a test for Pat.</p>
-</head>
+ <!DOCTYPE html>
 
-<body>
-
-    <form action="https://formsubmit.co/aksieteenalles@email.com" method="POST">
-        <input type="hidden" name="_subject" value="WindMill Farm booking confirmation">
-        <input type="hidden" name="_next" value="https://www.smlworld.co.uk">
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="text" name="Message here" placeholder="Write your message to Pat here !"required>
-        <input type="hidden" name="_next" value="https://www.smlworld.co.uk">
-        <button type="submit">Send</button>
-
-        <input type="hidden" name="_template" value="table">
-   </form>
-
-
-</body>
-</html>
+ <html>
+ <body>
+  <p>Click the button to calculate x.</p>
+  <button onclick="myFunction()">Try it</button>
+  <br/>
+  <br/>Enter first number:
+  <input type="text" id="txt1" name="text1">Enter second number:
+  <input type="text" id="txt2" name="text2">
+  <p id="demo"></p>
+ <script>
+    function myFunction() 
+    {
+      var y = document.getElementById("txt1").value;
+      var z = document.getElementById("txt2").value;
+      var x = parseInt(y) + parseInt(z);
+      document.getElementById("demo").innerHTML = x;
+    }
+ </script>
+ </body>
+ </html>
