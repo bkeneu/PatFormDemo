@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+<title>HTML Input Type Checkbox Element Make Required</title>
+<script src="https://bkeneu.github.io/PatFormDemo/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('button').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
+
+      if(!checked) {
+        alert("Please select one checkbox to submit.");
+        return false;
+      }
+
+    });
+});
+</script>
+<style>
+body{
+	padding:15px;
+}
+</style>
+</head>
 <body>
-
-    
-<h2>GB Windmill Farm Camping F1 Booking 2024</h2>
-
-<input class='acb' type='checkbox' name='acheckbox[]' value='1' onclick='deRequire("acb")' required> One
-<input class='acb' type='checkbox' name='acheckbox[]' value='2' onclick='deRequire("acb")' required> Two
-
-</body>
-</html>
+<form>
+	Please Select Your Gender:<br><br>
+	<input type="checkbox" name="gender[]" id="male" placeholder="Male" required/>
+	<label>Male</label><br>
+    <input type="checkbox" name="gender[]" id="female" placeholder="Female" required/>
+	<label>Female</label><br>
+    <input type="checkbox" name="gender[]" id="other" placeholder="Other" required/>
+	<label>Other</label><br><br>
+  	<button type="button">Submit</button>
+</form>
