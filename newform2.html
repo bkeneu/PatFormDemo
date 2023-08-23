@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html>
+
+<!-- AJAx API ref script -->
+<head>
+<title>HTML Input Type Checkbox Element Make Required</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('button').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
+
+      if(!checked) {
+        alert("Please select one checkbox to submit.");
+        return false;
+      }
+
+    });
+});
+</script>
+<style>
+body{
+	padding:15px;
+}
+</style>
+</head>
+
+
+	
 <body>
 
     
@@ -86,16 +113,16 @@
 
 
 	<br><br>
-	<input type="checkbox" name="Arriving Thursday" value="hursday to Monday, £100 per adult and Children (10 to 16 yrs old) £35 Per Child">
+	<input type="checkbox" name="Arriving Thursday" value="hursday to Monday, £100 per adult and Children (10 to 16 yrs old) £35 Per Child" required>
 	<label for="T2M">Thursday to Monday, £100 per adult and Children (10 to 16 yrs old) £35 Per Child</label>
 	<br><br>
-	<input type="checkbox" name="Arriving Friday" value="Friday to Monday, £80 per adult and Children (10 to 16 yrs old) £28 Per Child">
+	<input type="checkbox" name="Arriving Friday" value="Friday to Monday, £80 per adult and Children (10 to 16 yrs old) £28 Per Child" required>
 	<label for="F2M">Friday to Monday, £80 per adult and Children (10 to 16 yrs old) £28 Per Child</label>
 	<br><br>
-	<input type="checkbox" name="Arriving Satruday" value="Saturday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child">
+	<input type="checkbox" name="Arriving Satruday" value="Saturday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child" required>
 	<label for="S2M">Saturday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child</label>
 	<br><br>
-	<input type="checkbox" name="Arriving Sunday" value="Sunday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child">
+	<input type="checkbox" name="Arriving Sunday" value="Sunday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child" required>
 	<label for="Sn2M">Sunday to Monday, £60 per adult and Children (10 to 16 yrs old) £21 Per Child</label>
 	<br><br>
   	<br><br>
