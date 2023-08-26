@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<!-- AJAx API ref script -->
+<head>
+<title>HTML Input Type Checkbox Element Make Required</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('button').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
+
+      if(!checked) {
+        alert("Please select which day you will be arrving before submitting.");
+        return false;
+      }
+
+    });
+});
+</script>
+<style>
+body{
+	padding:15px;
+}
+</style>
+</head>
+
+
+	
+<body>
+
+    
+<h2>Windmill Farm Campsite MotoGP Booking 2024</h2>
+
+<!-- <form action="https://formsubmit.co/94c5cf8a44956dbc718b3350d598660b" method="POST">
+  <label for="fname">First name:</label><br>
+  	<input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label><br>
+  	<input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label><br>
+  	<input type="text" id="email" name="email"><br><br>
+  <label for="emai2">Please enter your Email address:</label><br>
+  	<input type="text" id="email2" name="email2"><br><br>
+  <label for="phone">Please enter your phone number:</label><br>
+  	<input type="text" id="phone" name="phone"><br><br> --->
+
+<!-- From submit test key  -->
+<form action="https://formsubmit.co/11848d9b939ca2f6c92f4589d456d3c5" method="POST">
+<!-- <form action="https://formsubmit.co/dd257b64e1eea87d95dd5885c624e856" method="POST"> -->
+<!-- <form action="https://formsubmit.co/94c5cf8a44956dbc718b3350d598660b" method="POST"> -->
+	
+	<label for="fname">First name:</label><br>
+  	<input type="text" id="fname" name="Name"><br><br>
+	
+  	<label for="lname">Last name:</label><br>
+  	<input type="text" id="lname" name="Surname"><br><br>  
+	
+	<label for="email">Please retype your Email address:</label><br>	
+        <input type="email" name="email" placeholder="Email Address" required>
+	
+	<br><br>
+	<!-- <label for="Question">If you have any questions please type them here:</label><br> -->
+        <!-- <input type="text" name="Message here" placeholder="Please type any questions you might have here"required> -->
+		
+	<!-- <textarea placeholder="Please type any questions you might have here" class="form-control" name="Questions" rows="10"></textarea> -->
+	
+        <!-- <input type="hidden" name="_next" value="http://www.windmillfarmcamping.co.uk/"> -->	
+		
+  <h3>Please Note: </h3>
+	<ul style="list-style-type:disc;">
+		<li>- All prices are for camping only (excludes Electric Hook Ups)</li>
+		<li>- Please pay for Electric Hook Ups ONLY on the right of this page through PayPal)</li>
+		<li>- Everyone must leave the site by Monday 12:00pm</li>
+	</ul>
+  <h3 style="color:Tomato;">NOTE: Children (Under 10yrs) - Stay for Free</h3>
+<br>
+  <label for="adults">Please select how many adults and children:</label>
+<br><br>
+<label for="adultsno">Adults : </label>
+  <select name="Adults" id="Adults">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>  
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+	</select>
+<br><br>	
+<label for="childrenno">Children : </label>
+	<select name="Children" id="Children">		
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>  
+  <option value="9">9</option>
+  <option value="10">10</option>
+  	</select>
+	<br><br>
+	 <h3>Please select the day you will arrive.</h3>
+	<br>
+
+	<input type="checkbox" name="Arriving Wednesday" value="Wednesday to Monday, £100 per adult and Children (10 to 16 yrs old) £40 Per Child">
+	<label for="W2M">Wednesday to Monday, £100 per adult and Children (10 to 16 yrs old) £40 Per Child</label>
+	<br><br>
+	<input type="checkbox" name="Arriving Thursday" value="Thursday to Monday, £80 per adult and Children (10 to 16 yrs old) £32 Per Child" >
+	<label for="T2M">Thursday to Monday, £80 per adult and Children (10 to 16 yrs old) £32 Per Child</label>
+	<br><br>
+	<input type="checkbox" name="Arriving Friday" value="Friday to Monday, £60 per adult and Children (10 to 16 yrs old) £24 Per Child" >
+	<label for="F2M">Friday to Monday, £60 per adult and Children (10 to 16 yrs old) £24 Per Child</label>
+	<br><br>
+	<input type="checkbox" name="Arriving Satruday" value="Saturday to Monday, £35 per adult and Children (10 to 16 yrs old) £16 Per Child" >
+	<label for="S2M">Saturday to Monday, £35 per adult and Children (10 to 16 yrs old) £16 Per Child</label>
+	<br><br>
+  	<br><br>
+
+  <input type="hidden" name="_subject" value="MotoGP 2024 WindMill Farm booking confirmation">
+  <input type="hidden" name="_next" value="http://www.windmillfarmcamping.co.uk/ThankyouMotoGP.html">
+  <input type="hidden" name="_autoresponse" value="Thank you for your booking, this is your booking confirmation">
+  <input type="hidden" name="_template" value="table">
+<button type="submit" style="width:120px" "height:60px">Submit booking information now</button>
+  
+</form>
+
+</body>
+</html>
